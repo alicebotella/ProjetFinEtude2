@@ -41,16 +41,24 @@ h1.titre {
   margin-right: 1vw;
 }
 
-/* Division des boites de textes */
+/* Division des boites de textes (bleu pale) */
 div {
   background-color: #EBF8FF;
   padding: 20px;
-  margin: 5%;
+  margin: auto;
+  /* margin: 5%;*/
   margin-bottom: 8%;
+  /* margin-left: 3%;
+    margin-right: 3%; */
   border-radius: 40px;
 }
 
-/* TEST fleche polygon*/
+.grosDiv {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+/* fleche polygon*/
 .menu a {
   width: 100px;
   background-color: #D1EFFF;
@@ -73,6 +81,16 @@ body::-webkit-scrollbar-thumb {
   /* creates padding around scroll thumb */
 }
 
+/* VIDÉOS */
+a.lienVid {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 2%;
+}
+
 /* inspiration
 --------------------------------------------- */
 /* prototype
@@ -88,6 +106,9 @@ body::-webkit-scrollbar-thumb {
   width: 30%;
 }
 
+/* .maquette1 {
+    display: grid;
+} */
 /* .maquette1 {
     grid-area: 1;
 }
@@ -111,7 +132,7 @@ body::-webkit-scrollbar-thumb {
 
 .maquettePlan {
     display: grid;
-    grid-template-columns: 100px 50px 50px 50px;
+    grid-template-columns: 400px 100px 100px 100px;
     grid-template-rows: auto;
     grid-template-areas:
     "texte texte texte 1 2"
@@ -124,6 +145,7 @@ p.maquetteTitre {
 
 /* Bouttons Prototype */
 .butProto {
+  /* display: flex; */
   background-color: #D1EFFF;
   border: none;
   border-radius: 10px;
@@ -131,9 +153,16 @@ p.maquetteTitre {
   justify-content: center;
   align-items: center;
   width: 100px;
-  margin: center;
+  margin: auto;
 }
 
+.lesBoutons {
+  display: flex;
+  margin-bottom: 5%;
+  margin-top: -2%;
+}
+
+/* Images */
 .ImgProto {
   width: 1200px;
   height: auto;
@@ -143,6 +172,15 @@ p.maquetteTitre {
   margin: auto;
   display: block;
   border-radius: 10px;
+  margin-bottom: 2%;
+}
+
+.MaImg {
+  width: 300px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 /* résultat
