@@ -1,0 +1,50 @@
+h1.titre {
+    font-size: 3em;
+    margin-bottom: 1.5em;
+}
+
+.menu, .titre {
+    text-align: center;
+}
+
+
+/* Navigation */
+.menu {
+    background-color: #81A1B3;
+    height: 12px;
+    margin-bottom: 5em;
+}
+
+.menu a {
+    margin-left: 1vw;
+    margin-right: 1vw;
+} 
+
+/* Division des boites de textes */
+div{
+    background-color: #EBF8FF;
+    padding: 20px;
+    margin: 5%;
+    margin-bottom: 8%;;
+    border-radius: 40px;
+}
+
+
+/* TEST fleche polygon*/
+.menu a{
+    width: 100px;
+    background-color: #D1EFFF;
+    padding: 20px 40px 20px 40px;
+    clip-path: polygon(75% 100%, 95% 45%, 75% 0%, 0% 0%, 20% 50%, 0% 100%);
+}
+
+/* Barre de scroll */
+body::-webkit-scrollbar {
+    width: 12px; /* width of the entire scrollbar */
+  }
+ 
+  body::-webkit-scrollbar-thumb {
+    background-color: #D1EFFF; /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    /* border: 3px solid #D1EEFF; */ /* creates padding around scroll thumb */
+  }

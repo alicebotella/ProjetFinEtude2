@@ -1,0 +1,10 @@
+/* Menu nav hover*/
+.menu a {
+    transition: .5s;
+}
+
+.menu a:hover {
+    background-color: #a9d4eb;
+    transition-timing-function: cubic-bezier(.17,.67,.83,.67);
+    animation-fill-mode: both;
+}

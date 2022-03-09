@@ -1,0 +1,146 @@
+/* ----------------------- Mobile ----------------------- */
+
+
+
+
+
+
+
+/* ----------------------- Tablette ----------------------- */
+
+
+
+
+
+
+
+/* ----------------------- Web ----------------------- */
+/* body {
+    margin: 2vw;
+} */
+h1.titre {
+    font-size: 3em;
+    margin-bottom: 1.5em;
+}
+
+.menu, .titre {
+    text-align: center;
+}
+
+
+/* Navigation */
+.menu {
+    background-color: #81A1B3;
+    height: 12px;
+    margin-bottom: 5em;
+}
+
+.menu a {
+    margin-left: 1vw;
+    margin-right: 1vw;
+} 
+
+/* Division des boites de textes */
+div{
+    background-color: #EBF8FF;
+    padding: 20px;
+    margin: 5%;
+    margin-bottom: 8%;;
+    border-radius: 50px;
+}
+
+
+/* TEST fleche polygon*/
+.menu a{
+    width: 100px;
+    background-color: #D1EFFF;
+    padding: 20px 40px 20px 40px;
+    clip-path: polygon(75% 100%, 95% 45%, 75% 0%, 0% 0%, 20% 50%, 0% 100%);
+}
+
+
+/* Blocs G et D dans "étapes" */
+.blocG {
+    width: 75%;
+    display: grid;
+    align-items: left;
+    justify-content: left;
+
+}
+
+
+.blocD {
+    width: 75%;
+    display: grid;
+    align-items: right;
+    justify-content: right;
+}
+
+/* Onglet Prototype - test*/
+.maquetteTexte {
+    width: 50%;
+    display: grid;
+    grid-area: texte;
+}
+
+.maquettes {
+    width: 30%;
+}
+
+/* .maquette1 {
+    grid-area: 1;
+}
+
+.maquette2 {
+    grid-area: 2;
+}
+
+.maquette3 {
+    grid-area: 3;
+}
+
+.maquette4 {
+    grid-area: 4;
+}
+
+.maquette5 {
+    grid-area: 5;
+}
+
+
+.maquettePlan {
+    display: grid;
+    grid-template-columns: 100px 50px 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "texte texte texte 1 2"
+    "3 4 . . 5";
+} */
+
+/* Images maquettes */
+.MaImg {
+    width: 500px;
+    height: auto;
+    border-radius: 50px;
+    align-items: center;
+}
+
+p.maquetteTitre {
+align-items: center;
+justify-content: center;
+}
+
+
+
+
+/* Bonus: barre de scroll */
+body::-webkit-scrollbar {
+    width: 12px; /* width of the entire scrollbar */
+  }
+ 
+  body::-webkit-scrollbar-thumb {
+    background-color: #D1EFFF; /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    /* border: 3px solid #D1EEFF; */ /* creates padding around scroll thumb */
+  }
+  

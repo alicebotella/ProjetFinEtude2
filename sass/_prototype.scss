@@ -1,0 +1,69 @@
+/* Onglet Prototype - test*/
+.maquetteTexte {
+    width: 50%;
+    display: grid;
+    grid-area: texte;
+}
+
+.maquettes {
+    width: 30%;
+}
+
+/* .maquette1 {
+    grid-area: 1;
+}
+
+.maquette2 {
+    grid-area: 2;
+}
+
+.maquette3 {
+    grid-area: 3;
+}
+
+.maquette4 {
+    grid-area: 4;
+}
+
+.maquette5 {
+    grid-area: 5;
+}
+
+
+.maquettePlan {
+    display: grid;
+    grid-template-columns: 100px 50px 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "texte texte texte 1 2"
+    "3 4 . . 5";
+} */
+
+p.maquetteTitre {
+    align-items: center;
+    justify-content: center;
+    }
+
+
+/* Bouttons Prototype */
+.butProto {
+    background-color: #D1EFFF;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin: center;
+}
+
+.ImgProto {
+    width: 1200px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+}

@@ -1,0 +1,16 @@
+/* Blocs G et D dans "étapes" */
+.blocG {
+    width: 75%;
+    display: grid;
+    align-items: left;
+    justify-content: left;
+
+}
+
+
+.blocD {
+    width: 75%;
+    display: grid;
+    align-items: right;
+    justify-content: right;
+}
