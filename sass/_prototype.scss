@@ -85,7 +85,9 @@ p.maquetteTitre {
 .MaImg {
     width: 300px;
     height: auto;
+    display: block;
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin: auto;
 }

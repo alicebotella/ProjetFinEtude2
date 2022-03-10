@@ -1,0 +1,37 @@
+/* Menu nav hover*/
+.menu a {
+    transition: .5s;
+}
+
+.menu a:hover {
+    background-color: #a9d4eb;
+    transition-timing-function: cubic-bezier(.17,.67,.83,.67);
+    animation-fill-mode: both;
+}
+
+
+/* DIV, boites de contenu */
+div, .grosDiv, .butProto {
+    transition: .5s;
+}
+
+div:hover, .grosDiv:hover {
+    box-shadow: 5px 10px 15px #81A1B3;
+    animation-fill-mode: both;
+}
+
+.butProto:hover {
+    box-shadow: 5px 5px 5px #81A1B3;
+    animation-fill-mode: both;
+}
+
+
+/* Petit commentaire section Résultat */
+.comResul {
+    transition: .5s;
+}
+
+.comResult:hover {
+    font-size: 30px;
+    animation-fill-mode: both;
+}

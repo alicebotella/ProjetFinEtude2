@@ -1,6 +1,42 @@
 @charset "UTF-8";
 /* animation
 --------------------------------------------- */
+/* Menu nav hover*/
+.menu a {
+  transition: .5s;
+}
+
+.menu a:hover {
+  background-color: #a9d4eb;
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  animation-fill-mode: both;
+}
+
+/* DIV, boites de contenu */
+div, .grosDiv, .butProto {
+  transition: .5s;
+}
+
+div:hover, .grosDiv:hover {
+  box-shadow: 5px 10px 15px #81A1B3;
+  animation-fill-mode: both;
+}
+
+.butProto:hover {
+  box-shadow: 5px 5px 5px #81A1B3;
+  animation-fill-mode: both;
+}
+
+/* Petit commentaire section Résultat */
+.comResul {
+  transition: .5s;
+}
+
+.comResult:hover {
+  font-size: 30px;
+  animation-fill-mode: both;
+}
+
 /* étapes
 --------------------------------------------- */
 /* Blocs G et D dans "étapes" */
@@ -85,6 +121,17 @@ body::-webkit-scrollbar-thumb {
   /* roundness of the scroll thumb */
   /* border: 3px solid #D1EEFF; */
   /* creates padding around scroll thumb */
+}
+
+footer {
+  background-color: #81A1B3;
+  height: 70px;
+}
+
+.foot {
+  padding: 20px;
+  color: #EBF8FF;
+  vertical-align: center;
 }
 
 /* VIDÉOS */
@@ -184,9 +231,11 @@ p.maquetteTitre {
 .MaImg {
   width: 300px;
   height: auto;
+  display: block;
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin: auto;
 }
 
 /* résultat
@@ -195,6 +244,15 @@ p.maquetteTitre {
 .videoFin {
   width: 1200px;
   height: auto;
+  display: block;
   border-radius: 20px;
+  margin: auto;
+  margin-bottom: 2%;
+}
+
+.comResul {
+  padding-left: 2%;
+  text-align: center;
+  font-style: italic;
 }
 /*# sourceMappingURL=style.css.map */
