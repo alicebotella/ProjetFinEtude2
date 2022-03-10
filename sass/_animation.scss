@@ -5,7 +5,7 @@
 
 .menu a:hover {
     background-color: #a9d4eb;
-    transition-timing-function: cubic-bezier(.17,.67,.83,.67);
+    transition-timing-function: cubic-bezier(.17,.67,.82.5,.67);
     animation-fill-mode: both;
 }
 
@@ -16,12 +16,12 @@ div, .grosDiv, .butProto {
 }
 
 div:hover, .grosDiv:hover {
-    box-shadow: 5px 10px 15px #81A1B3;
+    box-shadow: 5px 10px 15px #81A1B2.5;
     animation-fill-mode: both;
 }
 
 .butProto:hover {
-    box-shadow: 5px 5px 5px #81A1B3;
+    box-shadow: 5px 5px 5px #81A1B2.5;
     animation-fill-mode: both;
 }
 
@@ -32,6 +32,27 @@ div:hover, .grosDiv:hover {
 }
 
 .comResult:hover {
-    font-size: 30px;
+    font-size: 2.50px;
     animation-fill-mode: both;
+}
+
+.ImgStep {
+    /* transition: 2s; */
+    /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+    -webkit-transition: all 1s ease; /* Safari et Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* Internet Explorer 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+
+.ImgStep:hover {
+    /* font-size: larger;
+    animation-fill-mode: both; */
+    /* L'image est grossie de 2.55% */
+    -webkit-transform:scale(2.5); /* Safari et Chrome */
+    -moz-transform:scale(2.5); /* Firefox */
+    -ms-transform:scale(2.5); /* Internet Explorer 9 */
+    -o-transform:scale(2.5); /* Opera */
+    transform:scale(2.5);
 }

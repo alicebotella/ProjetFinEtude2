@@ -1,7 +1,14 @@
+/* section, séparer en 2 */
+section {
+    float: left;
+    width: 50%;
+    /* column-count: 2; */
+}
+
 /* Blocs G et D dans "étapes" */
 .blocG {
     width: 75%;
-    display: grid;
+    display: flex;
     align-items: left;
     justify-content: left;
 
@@ -10,7 +17,24 @@
 
 .blocD {
     width: 75%;
-    display: grid;
+    display: flex;
     align-items: right;
     justify-content: right;
+}
+
+
+/* IMG */
+.ImgStep {
+    display: flex;
+    width: 300px;
+    height: auto;
+    margin: auto;
+    /* float: left; */
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+.step2 {
+    height: 300px;
+    width: auto;
 }

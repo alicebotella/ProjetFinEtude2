@@ -8,7 +8,7 @@
 
 .menu a:hover {
   background-color: #a9d4eb;
-  transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.82 0.5, 0.67);
   animation-fill-mode: both;
 }
 
@@ -18,12 +18,12 @@ div, .grosDiv, .butProto {
 }
 
 div:hover, .grosDiv:hover {
-  box-shadow: 5px 10px 15px #81A1B3;
+  box-shadow: 5px 10px 15px #81A1B2 0.5;
   animation-fill-mode: both;
 }
 
 .butProto:hover {
-  box-shadow: 5px 5px 5px #81A1B3;
+  box-shadow: 5px 5px 5px #81A1B2 0.5;
   animation-fill-mode: both;
 }
 
@@ -33,25 +33,69 @@ div:hover, .grosDiv:hover {
 }
 
 .comResult:hover {
-  font-size: 30px;
+  font-size: 2.50px;
   animation-fill-mode: both;
+}
+
+.ImgStep {
+  /* transition: 2s; */
+  /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+  /* Safari et Chrome */
+  /* Firefox */
+  /* Internet Explorer 9 */
+  /* Opera */
+  transition: all 1s ease;
+}
+
+.ImgStep:hover {
+  /* font-size: larger;
+    animation-fill-mode: both; */
+  /* L'image est grossie de 2.55% */
+  /* Safari et Chrome */
+  /* Firefox */
+  /* Internet Explorer 9 */
+  /* Opera */
+  transform: scale(2.5);
 }
 
 /* étapes
 --------------------------------------------- */
+/* section, séparer en 2 */
+section {
+  float: left;
+  width: 50%;
+  /* column-count: 2; */
+}
+
 /* Blocs G et D dans "étapes" */
 .blocG {
   width: 75%;
-  display: grid;
+  display: flex;
   align-items: left;
   justify-content: left;
 }
 
 .blocD {
   width: 75%;
-  display: grid;
+  display: flex;
   align-items: right;
   justify-content: right;
+}
+
+/* IMG */
+.ImgStep {
+  display: flex;
+  width: 300px;
+  height: auto;
+  margin: auto;
+  /* float: left; */
+  border-radius: 10px;
+  vertical-align: middle;
+}
+
+.step2 {
+  height: 300px;
+  width: auto;
 }
 
 /* général
@@ -65,6 +109,7 @@ h1.titre {
 /* police */
 p, h1, h2, a, .butProto {
   font-family: "quicksand";
+  text-align: justify;
 }
 
 .menu, .titre {
@@ -142,6 +187,11 @@ a.lienVid {
   justify-content: center;
   font-size: 30px;
   margin-bottom: 2%;
+}
+
+/* TEXTE */
+.underline {
+  text-decoration: underline;
 }
 
 /* inspiration
