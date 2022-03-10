@@ -22,7 +22,13 @@
 --------------------------------------------- */
 h1.titre {
   font-size: 3em;
+  font-family: "Letters for Learners";
   margin-bottom: 1.5em;
+}
+
+/* police */
+p, h1, h2, a, .butProto {
+  font-family: "quicksand";
 }
 
 .menu, .titre {
