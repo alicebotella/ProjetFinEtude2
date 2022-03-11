@@ -16,12 +16,12 @@ div, .grosDiv, .butProto {
 }
 
 div:hover, .grosDiv:hover {
-    box-shadow: 5px 10px 15px #81A1B2.5;
+    box-shadow: 5px 10px 15px #81A1B2;
     animation-fill-mode: both;
 }
 
 .butProto:hover {
-    box-shadow: 5px 5px 5px #81A1B2.5;
+    box-shadow: 5px 5px 5px #81A1B2;
     animation-fill-mode: both;
 }
 
@@ -36,7 +36,9 @@ div:hover, .grosDiv:hover {
     animation-fill-mode: both;
 }
 
-.ImgStep {
+
+/* Agrandissement images */
+.ImgStep, .maquettes {
     /* transition: 2s; */
     /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
     -webkit-transition: all 1s ease; /* Safari et Chrome */
@@ -55,4 +57,15 @@ div:hover, .grosDiv:hover {
     -ms-transform:scale(2.5); /* Internet Explorer 9 */
     -o-transform:scale(2.5); /* Opera */
     transform:scale(2.5);
+}
+
+.maquettes:hover {
+    /* font-size: larger;
+    animation-fill-mode: both; */
+    /* L'image est grossie de 2.55% */
+    -webkit-transform:scale(1.5); /* Safari et Chrome */
+    -moz-transform:scale(1.5); /* Firefox */
+    -ms-transform:scale(1.5); /* Internet Explorer 9 */
+    -o-transform:scale(1.5); /* Opera */
+    transform:scale(1.5);
 }

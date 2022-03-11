@@ -18,12 +18,12 @@ div, .grosDiv, .butProto {
 }
 
 div:hover, .grosDiv:hover {
-  box-shadow: 5px 10px 15px #81A1B2 0.5;
+  box-shadow: 5px 10px 15px #81A1B2;
   animation-fill-mode: both;
 }
 
 .butProto:hover {
-  box-shadow: 5px 5px 5px #81A1B2 0.5;
+  box-shadow: 5px 5px 5px #81A1B2;
   animation-fill-mode: both;
 }
 
@@ -37,7 +37,8 @@ div:hover, .grosDiv:hover {
   animation-fill-mode: both;
 }
 
-.ImgStep {
+/* Agrandissement images */
+.ImgStep, .maquettes {
   /* transition: 2s; */
   /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
   /* Safari et Chrome */
@@ -56,6 +57,17 @@ div:hover, .grosDiv:hover {
   /* Internet Explorer 9 */
   /* Opera */
   transform: scale(2.5);
+}
+
+.maquettes:hover {
+  /* font-size: larger;
+    animation-fill-mode: both; */
+  /* L'image est grossie de 2.55% */
+  /* Safari et Chrome */
+  /* Firefox */
+  /* Internet Explorer 9 */
+  /* Opera */
+  transform: scale(1.5);
 }
 
 /* étapes
@@ -101,9 +113,9 @@ section {
 /* général
 --------------------------------------------- */
 h1.titre {
-  font-size: 3em;
+  font-size: 2em;
   font-family: "Letters for Learners";
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
 
 /* police */
@@ -128,7 +140,7 @@ p, h1, h2, a, .butProto {
   margin-right: 1vw;
 }
 
-/* Division des boites de textes (bleu pale) */
+/* Division des boites de textes (bleu pale) ----------------------------------- */
 div {
   background-color: #EBF8FF;
   padding: 20px;
@@ -145,14 +157,13 @@ div {
   margin-left: 10%;
 }
 
-/* fleche polygon*/
-.menu a {
-  width: 100px;
-  background-color: #D1EFFF;
-  padding: 20px 40px 20px 40px;
-  clip-path: polygon(75% 100%, 95% 45%, 75% 0%, 0% 0%, 20% 50%, 0% 100%);
-}
-
+/* fleche polygon ------------------------------------------------------- */
+/* .menu a{
+    width: 100px;
+    background-color: #D1EFFF;
+    padding: 20px 40px 20px 40px;
+    clip-path: polygon(75% 100%, 95% 45%, 75% 0%, 0% 0%, 20% 50%, 0% 100%);
+} */
 /* Barre de scroll */
 body::-webkit-scrollbar {
   width: 12px;
@@ -194,6 +205,25 @@ a.lienVid {
   text-decoration: underline;
 }
 
+/* ---------------------------------------------------------------------------------------- 
+    Page adaptable : mobile */
+@media screen and (min-width: 700px) {
+  h1.titre {
+    font-size: 3em;
+    margin-bottom: 1.5em;
+  }
+  /* fleche polygon*/
+  .menu a {
+    width: 100px;
+    background-color: #D1EFFF;
+    padding: 20px 40px 20px 40px;
+    clip-path: polygon(75% 100%, 95% 45%, 75% 0%, 0% 0%, 20% 50%, 0% 100%);
+  }
+}
+
+/* @media screen and (min-width: 1100px){
+
+} */
 /* inspiration
 --------------------------------------------- */
 /* prototype

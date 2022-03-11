@@ -1,7 +1,7 @@
 h1.titre {
-    font-size: 3em;
+    font-size: 2em;
     font-family: "Letters for Learners";
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
 }
 
 /* police */
@@ -27,7 +27,7 @@ p, h1, h2, a, .butProto {
     margin-right: 1vw;
 } 
 
-/* Division des boites de textes (bleu pale) */
+/* Division des boites de textes (bleu pale) ----------------------------------- */
 div{
     background-color: #EBF8FF;
     padding: 20px;
@@ -45,13 +45,13 @@ div{
 }
 
 
-/* fleche polygon*/
-.menu a{
+/* fleche polygon ------------------------------------------------------- */
+/* .menu a{
     width: 100px;
     background-color: #D1EFFF;
     padding: 20px 40px 20px 40px;
     clip-path: polygon(75% 100%, 95% 45%, 75% 0%, 0% 0%, 20% 50%, 0% 100%);
-}
+} */
 
 /* Barre de scroll */
 body::-webkit-scrollbar {
@@ -91,3 +91,31 @@ a.lienVid {
 .underline {
     text-decoration: underline;
 }
+
+/* ---------------------------------------------------------------------------------------- 
+    Page adaptable : mobile */
+    
+@media screen and (min-width: 700px) {
+
+    h1.titre {
+        font-size: 3em;
+        margin-bottom: 1.5em;
+    }
+
+    /* fleche polygon*/
+    .menu a{
+        width: 100px;
+        background-color: #D1EFFF;
+        padding: 20px 40px 20px 40px;
+        clip-path: polygon(75% 100%, 95% 45%, 75% 0%, 0% 0%, 20% 50%, 0% 100%);
+    }
+
+    
+
+}
+
+
+
+/* @media screen and (min-width: 1100px){
+
+} */

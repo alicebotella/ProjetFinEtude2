@@ -1,92 +1,217 @@
-/* ----------------------- Mobile ----------------------- */
-
-
-
-
-
-
-
-/* ----------------------- Tablette ----------------------- */
-
-
-
-
-
-
-
-/* ----------------------- Web ----------------------- */
-/* body {
-    margin: 2vw;
-} */
-h1.titre {
-    font-size: 3em;
-    margin-bottom: 1.5em;
-}
-
-.menu, .titre {
-    text-align: center;
-}
-
-
-/* Navigation */
-.menu {
-    background-color: #81A1B3;
-    height: 12px;
-    margin-bottom: 5em;
-}
-
+@charset "UTF-8";
+/* animation
+--------------------------------------------- */
+/* Menu nav hover*/
 .menu a {
-    margin-left: 1vw;
-    margin-right: 1vw;
-} 
-
-/* Division des boites de textes */
-div{
-    background-color: #EBF8FF;
-    padding: 20px;
-    margin: 5%;
-    margin-bottom: 8%;;
-    border-radius: 40px;
+  transition: .5s;
 }
 
-
-/* TEST fleche polygon*/
-.menu a{
-    width: 100px;
-    background-color: #D1EFFF;
-    padding: 20px 40px 20px 40px;
-    clip-path: polygon(75% 100%, 95% 45%, 75% 0%, 0% 0%, 20% 50%, 0% 100%);
+.menu a:hover {
+  background-color: #a9d4eb;
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.82 0.5, 0.67);
+  animation-fill-mode: both;
 }
 
+/* DIV, boites de contenu */
+div, .grosDiv, .butProto {
+  transition: .5s;
+}
+
+div:hover, .grosDiv:hover {
+  box-shadow: 5px 10px 15px #81A1B2 0.5;
+  animation-fill-mode: both;
+}
+
+.butProto:hover {
+  box-shadow: 5px 5px 5px #81A1B2 0.5;
+  animation-fill-mode: both;
+}
+
+/* Petit commentaire section Résultat */
+.comResul {
+  transition: .5s;
+}
+
+.comResult:hover {
+  font-size: 2.50px;
+  animation-fill-mode: both;
+}
+
+.ImgStep {
+  /* transition: 2s; */
+  /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+  /* Safari et Chrome */
+  /* Firefox */
+  /* Internet Explorer 9 */
+  /* Opera */
+  transition: all 1s ease;
+}
+
+.ImgStep:hover {
+  /* font-size: larger;
+    animation-fill-mode: both; */
+  /* L'image est grossie de 2.55% */
+  /* Safari et Chrome */
+  /* Firefox */
+  /* Internet Explorer 9 */
+  /* Opera */
+  transform: scale(2.5);
+}
+
+/* étapes
+--------------------------------------------- */
+/* section, séparer en 2 */
+section {
+  float: left;
+  width: 50%;
+  /* column-count: 2; */
+}
 
 /* Blocs G et D dans "étapes" */
 .blocG {
-    width: 75%;
-    display: grid;
-    align-items: left;
-    justify-content: left;
-
+  width: 75%;
+  display: flex;
+  align-items: left;
+  justify-content: left;
 }
-
 
 .blocD {
-    width: 75%;
-    display: grid;
-    align-items: right;
-    justify-content: right;
+  width: 75%;
+  display: flex;
+  align-items: right;
+  justify-content: right;
 }
 
+/* IMG */
+.ImgStep {
+  display: flex;
+  width: 300px;
+  height: auto;
+  margin: auto;
+  /* float: left; */
+  border-radius: 10px;
+  vertical-align: middle;
+}
+
+.step2 {
+  height: 300px;
+  width: auto;
+}
+
+/* général
+--------------------------------------------- */
+h1.titre {
+  font-size: 3em;
+  font-family: "Letters for Learners";
+  margin-bottom: 1.5em;
+}
+
+/* police */
+p, h1, h2, a, .butProto {
+  font-family: "quicksand";
+  text-align: justify;
+}
+
+.menu, .titre {
+  text-align: center;
+}
+
+/* Navigation */
+.menu {
+  background-color: #81A1B3;
+  height: 12px;
+  margin-bottom: 5em;
+}
+
+.menu a {
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+/* Division des boites de textes (bleu pale) */
+div {
+  background-color: #EBF8FF;
+  padding: 20px;
+  margin: auto;
+  /* margin: 5%;*/
+  margin-bottom: 8%;
+  /* margin-left: 3%;
+    margin-right: 3%; */
+  border-radius: 40px;
+}
+
+.grosDiv {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+/* fleche polygon*/
+.menu a {
+  width: 100px;
+  background-color: #D1EFFF;
+  padding: 20px 40px 20px 40px;
+  clip-path: polygon(75% 100%, 95% 45%, 75% 0%, 0% 0%, 20% 50%, 0% 100%);
+}
+
+/* Barre de scroll */
+body::-webkit-scrollbar {
+  width: 12px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #D1EFFF;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  /* border: 3px solid #D1EEFF; */
+  /* creates padding around scroll thumb */
+}
+
+footer {
+  background-color: #81A1B3;
+  height: 70px;
+}
+
+.foot {
+  padding: 20px;
+  color: #EBF8FF;
+  vertical-align: center;
+}
+
+/* VIDÉOS */
+a.lienVid {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 2%;
+}
+
+/* TEXTE */
+.underline {
+  text-decoration: underline;
+}
+
+/* inspiration
+--------------------------------------------- */
+/* prototype
+--------------------------------------------- */
 /* Onglet Prototype - test*/
 .maquetteTexte {
-    width: 50%;
-    display: grid;
-    grid-area: texte;
+  width: 50%;
+  display: grid;
+  grid-area: texte;
 }
 
 .maquettes {
-    width: 30%;
+  width: 30%;
 }
 
+/* .maquette1 {
+    display: grid;
+} */
 /* .maquette1 {
     grid-area: 1;
 }
@@ -110,66 +235,74 @@ div{
 
 .maquettePlan {
     display: grid;
-    grid-template-columns: 100px 50px 50px 50px;
+    grid-template-columns: 400px 100px 100px 100px;
     grid-template-rows: auto;
     grid-template-areas:
     "texte texte texte 1 2"
     "3 4 . . 5";
 } */
-
-/* Images maquettes */
-.MaImg {
-    width: 500px;
-    height: auto;
-    border-radius: 50px;
-    align-items: center;
-}
-
 p.maquetteTitre {
-align-items: center;
-justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Bouttons Prototype */
+.butProto {
+  /* display: flex; */
+  background-color: #D1EFFF;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  margin: auto;
+}
 
+.lesBoutons {
+  display: flex;
+  margin-bottom: 5%;
+  margin-top: -2%;
+}
 
+/* Images */
+.ImgProto {
+  width: 1200px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  display: block;
+  border-radius: 10px;
+  margin-bottom: 2%;
+}
 
-/* Bonus: barre de scroll */
-body::-webkit-scrollbar {
-    width: 12px; /* width of the entire scrollbar */
-  }
- 
-  body::-webkit-scrollbar-thumb {
-    background-color: #D1EFFF; /* color of the scroll thumb */
-    border-radius: 20px; /* roundness of the scroll thumb */
-    /* border: 3px solid #D1EEFF; */ /* creates padding around scroll thumb */
-  }
-  
+.MaImg {
+  width: 300px;
+  height: auto;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
 
-  /* Bouttons Prototype */
-  .butProto {
-      background-color: #D1EFFF;
-      border: none;
-      border-radius: 10px;
-      padding: 10px;
-      justify-content: center;
-      align-items: center;
-      width: 100px;
-      margin: center;
-  }
+/* résultat
+--------------------------------------------- */
+/* Vidéo résultat final */
+.videoFin {
+  width: 1200px;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+  margin: auto;
+  margin-bottom: 2%;
+}
 
-  .ImgProto {
-      width: 1200px;
-      height: auto;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      margin: auto;
-      display: block;
-      border-radius: 10px;
-  }
-
-  /* Vidéo résultat final */
-  .videoFin {
-    width: 1200px;
-    height: auto;
-  }
+.comResul {
+  padding-left: 2%;
+  text-align: center;
+  font-style: italic;
+}
+/*# sourceMappingURL=style.css.map */
