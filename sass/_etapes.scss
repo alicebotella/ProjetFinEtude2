@@ -1,4 +1,4 @@
-/* section, séparer en 2 */
+/* section, séparer en 2 colonnes */
 section {
     /* float: left; */
     width: 50%;
@@ -7,19 +7,22 @@ section {
 
 /* Blocs G et D dans "étapes" */
 .blocG {
-    width: 75%;
+    width: 60%;
     display: flex;
     align-items: left;
     justify-content: left;
-
+    float: left;
+    margin-left: 5%;
 }
 
 
 .blocD {
-    width: 75%;
+    width: 60%;
     display: flex;
     align-items: right;
     justify-content: right;
+    float: right;
+    margin-right: 5%;
 }
 
 
@@ -38,3 +41,4 @@ section {
     height: 300px;
     width: auto;
 }
+
