@@ -7,6 +7,8 @@
 
 .maquettes {
     width: 30%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 /* .maquette1 {
@@ -48,9 +50,10 @@
 }
 
 p.maquetteTitre {
+    display: flex;
     align-items: center;
     justify-content: center;
-    }
+}
 
 
 /* Bouttons Prototype */

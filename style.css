@@ -250,6 +250,8 @@ a.lienVid {
 
 .maquettes {
   width: 30%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 /* .maquette1 {
@@ -289,6 +291,7 @@ a.lienVid {
 }
 
 p.maquetteTitre {
+  display: flex;
   align-items: center;
   justify-content: center;
 }
