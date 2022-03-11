@@ -71,6 +71,15 @@ div:hover, .grosDiv:hover {
   box-shadow: 5px 10px 15px #81A1B2;
 }
 
+/* BOUTON inverser couleurs */
+.couleurGlobale {
+  background-color: black;
+}
+
+.couleurGlobale .titre {
+  color: white;
+}
+
 /* étapes
 --------------------------------------------- */
 /* section, séparer en 2 colonnes */
@@ -108,6 +117,7 @@ section {
   /* float: left; */
   border-radius: 10px;
   vertical-align: middle;
+  margin-top: 5%;
 }
 
 .step2 {
@@ -188,6 +198,7 @@ body::-webkit-scrollbar-thumb {
   /* creates padding around scroll thumb */
 }
 
+/* FOOTER  */
 footer {
   background-color: #81A1B3;
   height: 70px;
@@ -201,6 +212,18 @@ footer {
   padding: 20px;
   color: #EBF8FF;
   vertical-align: center;
+}
+
+.butFoot {
+  display: flex;
+  background-color: #D1EFFF;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  /* margin: auto; */
 }
 
 /* VIDÉOS */

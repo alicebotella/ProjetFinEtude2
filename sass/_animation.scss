@@ -70,3 +70,12 @@ div:hover, .grosDiv:hover {
     transform:scale(1.5);
     box-shadow: 5px 10px 15px #81A1B2;
 }
+
+
+/* BOUTON inverser couleurs */
+.couleurGlobale {
+    background-color: black;
+    .titre {
+        color: white;
+    }
+}
