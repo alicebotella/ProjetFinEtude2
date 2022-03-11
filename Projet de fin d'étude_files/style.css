@@ -71,9 +71,18 @@ div:hover, .grosDiv:hover {
   box-shadow: 5px 10px 15px #81A1B2;
 }
 
+/* BOUTON inverser couleurs */
+.couleurGlobale {
+  background-color: black;
+}
+
+.couleurGlobale .titre {
+  color: white;
+}
+
 /* étapes
 --------------------------------------------- */
-/* section, séparer en 2 */
+/* section, séparer en 2 colonnes */
 section {
   /* float: left; */
   width: 50%;
@@ -82,17 +91,21 @@ section {
 
 /* Blocs G et D dans "étapes" */
 .blocG {
-  width: 75%;
+  width: 60%;
   display: flex;
   align-items: left;
   justify-content: left;
+  float: left;
+  margin-left: 5%;
 }
 
 .blocD {
-  width: 75%;
+  width: 60%;
   display: flex;
   align-items: right;
   justify-content: right;
+  float: right;
+  margin-right: 5%;
 }
 
 /* IMG */
@@ -104,6 +117,7 @@ section {
   /* float: left; */
   border-radius: 10px;
   vertical-align: middle;
+  margin-top: 5%;
 }
 
 .step2 {
@@ -184,15 +198,32 @@ body::-webkit-scrollbar-thumb {
   /* creates padding around scroll thumb */
 }
 
+/* FOOTER  */
 footer {
   background-color: #81A1B3;
   height: 70px;
+  /*     position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0; */
 }
 
 .foot {
   padding: 20px;
   color: #EBF8FF;
   vertical-align: center;
+}
+
+.butFoot {
+  display: flex;
+  background-color: #D1EFFF;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  /* margin: auto; */
 }
 
 /* VIDÉOS */
@@ -242,6 +273,8 @@ a.lienVid {
 
 .maquettes {
   width: 30%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 /* .maquette1 {
@@ -281,6 +314,7 @@ a.lienVid {
 }
 
 p.maquetteTitre {
+  display: flex;
   align-items: center;
   justify-content: center;
 }
