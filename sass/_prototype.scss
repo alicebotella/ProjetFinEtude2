@@ -43,6 +43,10 @@
     "3 4 . . 5";
 } */
 
+.maquettePlan {
+    display: flex;
+}
+
 p.maquetteTitre {
     align-items: center;
     justify-content: center;
@@ -51,7 +55,7 @@ p.maquetteTitre {
 
 /* Bouttons Prototype */
 .butProto {
-    /* display: flex; */
+    display: flex;
     background-color: #D1EFFF;
     border: none;
     border-radius: 10px;
@@ -64,6 +68,7 @@ p.maquetteTitre {
 
 .lesBoutons {
     display: flex;
+    margin: auto;
     margin-bottom: 5%;
     margin-top: -2%;
 }
@@ -90,6 +95,7 @@ p.maquetteTitre {
     justify-content: center;
     text-align: center;
     margin: auto;
+    border-radius: 15px;
 }
 
 

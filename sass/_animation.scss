@@ -38,7 +38,7 @@ div:hover, .grosDiv:hover {
 
 
 /* Agrandissement images */
-.ImgStep, .maquettes {
+.ImgStep, .MaImg {
     /* transition: 2s; */
     /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
     -webkit-transition: all 1s ease; /* Safari et Chrome */
@@ -59,7 +59,7 @@ div:hover, .grosDiv:hover {
     transform:scale(2.5);
 }
 
-.maquettes:hover {
+.MaImg:hover {
     /* font-size: larger;
     animation-fill-mode: both; */
     /* L'image est grossie de 2.55% */
@@ -68,4 +68,5 @@ div:hover, .grosDiv:hover {
     -ms-transform:scale(1.5); /* Internet Explorer 9 */
     -o-transform:scale(1.5); /* Opera */
     transform:scale(1.5);
+    box-shadow: 5px 10px 15px #81A1B2;
 }

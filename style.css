@@ -38,7 +38,7 @@ div:hover, .grosDiv:hover {
 }
 
 /* Agrandissement images */
-.ImgStep, .maquettes {
+.ImgStep, .MaImg {
   /* transition: 2s; */
   /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
   /* Safari et Chrome */
@@ -59,7 +59,7 @@ div:hover, .grosDiv:hover {
   transform: scale(2.5);
 }
 
-.maquettes:hover {
+.MaImg:hover {
   /* font-size: larger;
     animation-fill-mode: both; */
   /* L'image est grossie de 2.55% */
@@ -68,13 +68,14 @@ div:hover, .grosDiv:hover {
   /* Internet Explorer 9 */
   /* Opera */
   transform: scale(1.5);
+  box-shadow: 5px 10px 15px #81A1B2;
 }
 
 /* étapes
 --------------------------------------------- */
 /* section, séparer en 2 */
 section {
-  float: left;
+  /* float: left; */
   width: 50%;
   /* column-count: 2; */
 }
@@ -126,6 +127,10 @@ p, h1, h2, a, .butProto {
 
 .menu, .titre {
   text-align: center;
+}
+
+p {
+  line-height: 1.5em;
 }
 
 /* Navigation */
@@ -271,6 +276,10 @@ a.lienVid {
     "texte texte texte 1 2"
     "3 4 . . 5";
 } */
+.maquettePlan {
+  display: flex;
+}
+
 p.maquetteTitre {
   align-items: center;
   justify-content: center;
@@ -278,7 +287,7 @@ p.maquetteTitre {
 
 /* Bouttons Prototype */
 .butProto {
-  /* display: flex; */
+  display: flex;
   background-color: #D1EFFF;
   border: none;
   border-radius: 10px;
@@ -291,6 +300,7 @@ p.maquetteTitre {
 
 .lesBoutons {
   display: flex;
+  margin: auto;
   margin-bottom: 5%;
   margin-top: -2%;
 }
@@ -316,6 +326,7 @@ p.maquetteTitre {
   justify-content: center;
   text-align: center;
   margin: auto;
+  border-radius: 15px;
 }
 
 /* div bugé */
