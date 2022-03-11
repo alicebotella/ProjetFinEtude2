@@ -318,6 +318,11 @@ p.maquetteTitre {
   margin: auto;
 }
 
+/* div bugé */
+.grosDiv2 {
+  display: grid;
+}
+
 /* résultat
 --------------------------------------------- */
 /* Vidéo résultat final */
